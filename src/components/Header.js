@@ -33,7 +33,12 @@ const Header = () => {
             </Link>
           </li>
           <li className="mx-5 p-2  text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
-            Blog
+            <Link
+              to="/blog"
+              className={location.pathname === "/blog" ? "text-white" : ""}
+            >
+              Blog
+            </Link>
           </li>
           <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
             <Link

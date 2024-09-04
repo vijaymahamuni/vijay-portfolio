@@ -34,7 +34,7 @@ const About = () => {
           <h1 className="mt-6">Frontend Development</h1>
 
           <div className="mt-4 flex flex-wrap">
-            <div className="cursor-pointer">
+            <div className="cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                 className="w-8 ml-1"
@@ -42,7 +42,7 @@ const About = () => {
               />
               {/* <h1 className="text-black ml-4">JavaScript</h1> */}
             </div>
-            <div className="ml-4 cursor-pointer">
+            <div className="ml-4 cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
                 className="w-8 ml-2"
@@ -50,7 +50,7 @@ const About = () => {
               />
               {/* <h1 className="text-black ml-6">React</h1> */}
             </div>
-            <div className="ml-4  cursor-pointer">
+            <div className="ml-4  cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                 className="w-8 ml-2"
@@ -58,7 +58,7 @@ const About = () => {
               />{" "}
               {/* <h1 className="text-black ml-6">HTML</h1> */}
             </div>
-            <div className="ml-4  cursor-pointer">
+            <div className="ml-4  cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
                 className="w-8 ml-2"
@@ -66,7 +66,7 @@ const About = () => {
               />{" "}
               {/* <h1 className="text-black ml-6">CSS</h1> */}
             </div>
-            <div className="ml-4  cursor-pointer ">
+            <div className="ml-4  cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
                 className="w-8 ml-1"
@@ -74,7 +74,7 @@ const About = () => {
               />{" "}
               {/* <h1 className="text-black ml-2">Tailwind CSS</h1> */}
             </div>
-            <div className="ml-4  cursor-pointer ">
+            <div className="ml-4  cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
                 className="w-8 ml-2"
@@ -87,7 +87,7 @@ const About = () => {
           <h1 className="mt-6">Backend Development</h1>
 
           <div className="mt-4 flex flex-wrap">
-            <div className=" cursor-pointer">
+            <div className=" cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
                 className="w-8 ml-2"
@@ -95,7 +95,7 @@ const About = () => {
               />{" "}
               {/* <h1 className="text-black ml-6">NodeJS</h1> */}
             </div>
-            <div className="ml-4  cursor-pointer ">
+            <div className="ml-4  cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://w7.pngwing.com/pngs/747/798/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text-thumbnail.png"
                 className="w-8 ml-2"
@@ -103,7 +103,7 @@ const About = () => {
               />
               {/* <h1 className="text-black ml-6">MySQL</h1> */}
             </div>
-            <div className="ml-4  cursor-pointer ">
+            <div className="ml-4  cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg"
                 className="w-8 ml-1"
@@ -115,7 +115,7 @@ const About = () => {
           <h1 className="mt-8">WebFOCUS Development</h1>
 
           <div className="mt-4">
-            <div className="  cursor-pointer  ">
+            <div className=" cursor-pointer p-2 bg-[#374151] w-14 rounded-md">
               <img
                 src="https://store-images.s-microsoft.com/image/apps.200.3ca565e9-ba93-4730-a4f7-0d4e3e9a9a63.2b6b3291-3d7d-4dc9-9197-ab9eb51c3529.b29f50f0-6f2f-425e-b3ec-e7f9bd4598e9"
                 className="w-12 ml-1"
@@ -126,7 +126,7 @@ const About = () => {
           </div>
           <h1 className="mt-4">Mobile Developement</h1>
           <div className="mt-1 flex flex-wrap ">
-            <div className=" mt-4  cursor-pointer">
+            <div className=" mt-4  cursor-pointer p-2 text-center bg-[#374151] rounded-md">
               <img
                 src="https://pagepro.co/blog/wp-content/uploads/2020/03/react-native-logo-884x1024.png"
                 className="w-8 ml-1"
@@ -135,6 +135,16 @@ const About = () => {
               {/* <h1 className="text-black ml-2">React Native </h1> */}
             </div>
           </div>
+          {/* <div className="mt-4">
+            <h1>My Journey</h1>
+            <div>Complete Degree</div>
+            <div>Complete Degree</div>
+            <div>Complete Degree</div>
+            <div>Complete Degree</div>
+            <div>Complete Degree</div>
+            <div>Complete Degree</div>
+            <div>Complete Degree</div>
+          </div> */}
         </div>
       </div>
     </div>

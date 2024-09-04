@@ -58,7 +58,25 @@ const Home = () => {
           style={{ opacity: currentText ? 1 : 0 }}
         >
           {currentText}
-          <span className="blinking-cursor">|</span>
+          <span className="inline-block animate-move-bottom">|</span>
+          <style jsx>{`
+            @tailwind base;
+            @tailwind components;
+            @tailwind utilities;
+
+            @keyframes move-bottom {
+              0% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(2px); /* Adjust the distance as needed */
+              }
+            }
+
+            .animate-move-bottom {
+              animation: move-bottom 0.2s ease infinite alternate;
+            }
+          `}</style>
         </h1>
         <div className="mt-8">
           <h1 className="mt-24 text-base text-white sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
@@ -69,13 +87,31 @@ const Home = () => {
 
         <div className="flex md:justify-start">
           <h1 className="mr-5 mt-10 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
-            <LinkedInIcon fontSize="large" />
+            <LinkedInIcon
+              fontSize="large"
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/vijaymahamuni",
+                  "_blank"
+                );
+              }}
+            />
           </h1>
           <h1 className="mr-5 mt-10 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
-            <InstagramIcon fontSize="large" />
+            <InstagramIcon
+              fontSize="large"
+              onClick={() => {
+                window.open("https://www.instagram.com/the_vijay11", "_blank");
+              }}
+            />
           </h1>
           <h1 className="mr-5 mt-10 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
-            <GitHubIcon fontSize="large" />
+            <GitHubIcon
+              fontSize="large"
+              onClick={() => {
+                window.open("https://github.com/vijaymahamuni", "_blank");
+              }}
+            />
           </h1>
         </div>
         <p
