@@ -12,7 +12,7 @@ import Blog from "./components/Blog";
 
 const AppLayout = () => {
   return (
-    <div>
+    <div className="w-full h-screen flex flex-col">
       <App />
       <Outlet />
     </div>

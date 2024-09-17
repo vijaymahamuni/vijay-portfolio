@@ -50,11 +50,13 @@ const Home = () => {
     navigate("/about");
   };
   return (
-    <div className="h-[87.5vh] bg-[#0a192f] text-white overflow-hidden">
-      <div className="mx-auto w-9/12 mt-28">
-        <h1 className="text-5xl font-bold">Hey, I am Vijay</h1>
+    <main className="flex-grow bg-[#0a192f]  text-white">
+      <div className="mx-auto max-sm:ml-2 max-sm:w-full sm:w-10/12 md:w-10/12 lg:w-9/12 xl:w-9/12 mt-28">
+        <h1 className="lg:text-4xl max-sm:text-lg sm:text-2xl md:text-3xl font-bold">
+          Hey, I am Vijay
+        </h1>
         <h1
-          className="text-5xl font-bold text-blue-400 absolute mt-4 transition-opacity duration-500"
+          className="lg:text-4xl max-sm:text-lg  sm:text-2xl sm:max-w-xl sm:mx-auto md:text-3xl lg:mx-0 font-bold text-blue-400 absolute mt-4 transition-opacity duration-500"
           style={{ opacity: currentText ? 1 : 0 }}
         >
           {currentText}
@@ -78,6 +80,7 @@ const Home = () => {
             }
           `}</style>
         </h1>
+
         <div className="mt-8">
           <h1 className="mt-24 text-base text-white sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
             I am a Full-Stack Developer/Data Analyst. I am currently working at
@@ -114,6 +117,7 @@ const Home = () => {
             />
           </h1>
         </div>
+
         <p
           className="mt-12 font-bold text-gray-400 cursor-pointer"
           onClick={handle_linkAbout}
@@ -143,7 +147,7 @@ const Home = () => {
           }
         `}</style>
       </div>
-    </div>
+    </main>
   );
 };
 

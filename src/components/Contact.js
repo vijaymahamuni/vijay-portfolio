@@ -42,9 +42,9 @@ const Contact = () => {
       );
   };
   return (
-    <div className="bg-[#0a192f] h-[87.5vh] text-white">
-      <div className="mx-auto w-9/12 pt-12 flex justify-between">
-        <div>
+    <div className="flex-grow bg-[#0a192f] text-white">
+      <div className="mx-auto w-9/12 pt-12 flex flex-col lg:flex-row lg:justify-between">
+        <div className="lg:w-1/2">
           <h1 className="text-2xl font-bold">Contact</h1>
           <h1 className="text-gray-400 mt-4">
             Get in touch or shoot me an email directly on
@@ -59,10 +59,9 @@ const Contact = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className="bg-[#0a192f] p-2 w-10/12 font-bold rounded-md"
-                style={{ border: "0.5px solid gray", Opacity: "0.1" }}
+                style={{ border: "0.5px solid gray", opacity: "0.1" }}
               />
             </div>
-
             <div className="mt-10">
               <input
                 type="email"
@@ -71,7 +70,7 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="bg-[#0a192f] p-2 w-10/12 font-bold rounded-md"
-                style={{ border: "0.5px solid gray", Opacity: "0.1" }}
+                style={{ border: "0.5px solid gray", opacity: "0.1" }}
               />
             </div>
             <div className="mt-10">
@@ -82,7 +81,7 @@ const Contact = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className="bg-[#0a192f] p-2 w-10/12 font-bold rounded-md"
-                style={{ border: "0.5px solid gray", Opacity: "0.1" }}
+                style={{ border: "0.5px solid gray", opacity: "0.1" }}
               />
             </div>
             <div className="mt-10 text-black">
@@ -93,7 +92,10 @@ const Contact = () => {
                 Send Message
               </button>
             </div>
-            <div className="mt-10 cursor-pointer" onClick={backToHome}>
+            <div
+              className="mt-10 cursor-pointer hidden md:hidden lg:flex"
+              onClick={backToHome}
+            >
               <p className="text-[#e1e1e1]">
                 Go Back Home
                 <span className="ml-6 inline-block animate-move-right">
@@ -123,21 +125,21 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div>
-          <div className="mt-4">
-            <p className="font-bold text-xl">Email</p>
-            <p className="mt-3 text-lg  text-blue-400 cursor-pointer">
+        <div className="lg:w-1/2 lg:pl-10 md:mt-24 lg:mt-0">
+          <div className="lg:mt-4">
+            <p className="font-bold text-xl mt-6">Email</p>
+            <p className="mt-4 text-lg text-blue-400 cursor-pointer">
               vijaysethu0101@gmail.com
             </p>
           </div>
-          <div className="mt-12">
-            <p className="font-bold text-xl">Address</p>
-            <p className="mt-3 text-lg text-blue-400">Chennai</p>
+          <div className="lg:mt-12 md:mt-10">
+            <p className="font-bold text-xl mt-6">Address</p>
+            <p className="mt-4 md:mt-2 text-lg text-blue-400">Chennai</p>
           </div>
-          <div className="mt-12">
-            <p className="font-bold text-xl">Social</p>
-            <div className="flex md:justify-start">
-              <h1 className="mr-5 mt-6 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+          <div className="lg:mt-12 md:mt-6 ">
+            <p className="font-bold text-xl mt-6">Social</p>
+            <div className="flex flex-wrap md:justify-between lg:justify-start mt-6">
+              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
                 <LinkedInIcon
                   fontSize="large"
                   onClick={() => {
@@ -148,7 +150,7 @@ const Contact = () => {
                   }}
                 />
               </h1>
-              <h1 className="mr-5 mt-6 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
                 <InstagramIcon
                   fontSize="large"
                   onClick={() => {
@@ -159,7 +161,7 @@ const Contact = () => {
                   }}
                 />
               </h1>
-              <h1 className="mr-5 mt-6 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
                 <GitHubIcon
                   fontSize="large"
                   onClick={() => {
@@ -167,7 +169,7 @@ const Contact = () => {
                   }}
                 />
               </h1>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
