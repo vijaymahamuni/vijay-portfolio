@@ -50,7 +50,7 @@ const Contact = () => {
             Get in touch or shoot me an email directly on
             vijaysethu0101@gmail.com
           </h1>
-          <div className="text-white">
+          <div>
             <div className="mt-10">
               <input
                 type="text"
@@ -58,8 +58,8 @@ const Contact = () => {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="bg-[#0a192f] p-2 w-10/12 font-bold rounded-md"
-                style={{ border: "0.5px solid gray", opacity: "0.1" }}
+                className="bg-[#0a192f] text-white p-2 w-10/12 font-bold rounded-md"
+                style={{ border: "0.5px solid gray" }}
               />
             </div>
             <div className="mt-10">
@@ -69,8 +69,8 @@ const Contact = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-[#0a192f] p-2 w-10/12 font-bold rounded-md"
-                style={{ border: "0.5px solid gray", opacity: "0.1" }}
+                className="bg-[#0a192f] text-white p-2 w-10/12 font-bold rounded-md"
+                style={{ border: "0.5px solid gray" }}
               />
             </div>
             <div className="mt-10">
@@ -80,8 +80,8 @@ const Contact = () => {
                 placeholder="Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="bg-[#0a192f] p-2 w-10/12 font-bold rounded-md"
-                style={{ border: "0.5px solid gray", opacity: "0.1" }}
+                className="bg-[#0a192f] text-white p-2 w-10/12 h-24 font-bold rounded-md"
+                style={{ border: "0.5px solid gray" }}
               />
             </div>
             <div className="mt-10 text-black">
