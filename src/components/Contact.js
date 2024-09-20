@@ -1,9 +1,7 @@
 import { useState } from "react";
 import EastIcon from "@mui/icons-material/East";
 import { useNavigate } from "react-router-dom";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import GitHubIcon from "@mui/icons-material/GitHub";
+
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -43,7 +41,7 @@ const Contact = () => {
   };
   return (
     <div className="flex-grow bg-[#0a192f] text-white">
-      <div className="mx-auto w-9/12 pt-12 flex flex-col lg:flex-row lg:justify-between">
+      <div className="mx-auto w-9/12 pt-12 flex  justify-between lg:flex-row lg:justify-between">
         <div className="lg:w-1/2">
           <h1 className="text-2xl font-bold">Contact</h1>
           <h1 className="text-gray-400 mt-4">
@@ -125,7 +123,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 lg:pl-10 md:mt-24 lg:mt-0">
+        <div></div>
+        <div className="lg:w-1/2 lg:pl-52 md:mt-24 lg:mt-0">
           <div className="lg:mt-4">
             <p className="font-bold text-xl mt-6">Email</p>
             <p className="mt-4 text-lg text-blue-400 cursor-pointer">
@@ -138,38 +137,6 @@ const Contact = () => {
           </div>
           <div className="lg:mt-12 md:mt-6 ">
             <p className="font-bold text-xl mt-6">Social</p>
-            <div className="flex flex-wrap md:justify-between lg:justify-start mt-6">
-              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
-                <LinkedInIcon
-                  fontSize="large"
-                  onClick={() => {
-                    window.open(
-                      "https://www.linkedin.com/in/vijaymahamuni",
-                      "_blank"
-                    );
-                  }}
-                />
-              </h1>
-              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
-                <InstagramIcon
-                  fontSize="large"
-                  onClick={() => {
-                    window.open(
-                      "https://www.instagram.com/the_vijay11",
-                      "_blank"
-                    );
-                  }}
-                />
-              </h1>
-              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
-                <GitHubIcon
-                  fontSize="large"
-                  onClick={() => {
-                    window.open("https://github.com/vijaymahamuni", "_blank");
-                  }}
-                />
-              </h1>
-            </div>
           </div>
         </div>
       </div>

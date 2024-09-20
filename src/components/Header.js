@@ -3,15 +3,17 @@ import HomeIcon from "@mui/icons-material/Home";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 const Header = () => {
   const location = useLocation();
-  console.log("location", location.pathname);
+  // console.log("location", location.pathname);
   return (
     <div>
-      <div className="hidden md:hidden lg:flex justify-between items-center mx-auto w-9/12 text-white">
+      <div className="lg:flex justify-between items-center mx-auto w-9/12 text-white">
         <div className="text-[18px] font-[500]">Vijay Mahamuni</div>
-        <div className="  p-2 m-4">
+        <div className=" max-md:hidden p-2 m-2 ">
           <ul className="flex">
             <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
               <Link
@@ -54,6 +56,40 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+        </div>
+        <div>
+          <div className="flex md:justify-start">
+            <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <LinkedInIcon
+                fontSize="medium"
+                onClick={() => {
+                  window.open(
+                    "https://www.linkedin.com/in/vijaymahamuni",
+                    "_blank"
+                  );
+                }}
+              />
+            </h1>
+            <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <InstagramIcon
+                fontSize="medium"
+                onClick={() => {
+                  window.open(
+                    "https://www.instagram.com/the_vijay11",
+                    "_blank"
+                  );
+                }}
+              />
+            </h1>
+            <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <GitHubIcon
+                fontSize="medium"
+                onClick={() => {
+                  window.open("https://github.com/vijaymahamuni", "_blank");
+                }}
+              />
+            </h1>
+          </div>
         </div>
       </div>
       <div className="lg:hidden fixed bottom-0 left-0 w-full bg-gray-900 text-white flex justify-around items-center p-3">
