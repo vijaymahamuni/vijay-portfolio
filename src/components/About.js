@@ -1,4 +1,14 @@
 import { useState } from "react";
+import {
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Typography,
+  Box,
+} from "@mui/material";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+
 const About = () => {
   const [isHoveredreact, setIsHoveredreact] = useState(false);
   const [isHoverJS, setIsHoverJS] = useState(false);
@@ -17,31 +27,67 @@ const About = () => {
     <main className="flex-grow bg-[#0a192f] text-white">
       <div className="mx-auto w-full md:w-9/12 lg:w-8/12 xl:w-9/12  max-sm:pt-4 md:pt-12 max-sm:ml-2">
         <div>
-          <h1 className="text-xl md:text-2xl font-bold">About Me</h1>
-          <div className="md:mt-6 max-sm:mt-2 text-base md:text-lg">
-            <h1>I am Vijay, a 24-year-old Software Developer.</h1>
-            <h1 className="mt-2">
-              I'm a passionate web developer with a strong focus on building
-              robust and dynamic web applications.
-            </h1>
-            <h1 className="mt-2">
-              I take into consideration the user experience while writing
-              reusable and efficient code. I passionately combine good design,
-              technology, and innovation in all my projects.
-            </h1>
-            <h1 className="mt-2">
-              In addition to web development, I have a solid background in data
-              analysis, particularly with WebFOCUS.
-            </h1>
-            <h1 className="mt-2">
-              Have completed my bachelor's degree in Computer Science and
-              Engineering at GCET, Thanjavur.
-            </h1>
-          </div>
+          <h1 className="text-xl md:text-2xl lg:font-bold max-md:text-center">
+            About Me
+          </h1>
+
+          <Box sx={{ maxWidth: "md" }}>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText primary="I am Vijay, a 24-year-old Software Developer." />
+              </ListItem>
+
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText primary="I'm a passionate web developer with a strong focus on building robust and dynamic web applications." />
+              </ListItem>
+
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText primary="I take into consideration the user experience while writing reusable and efficient code." />
+              </ListItem>
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText
+                  primary=" I passionately combine good design,
+              technology, and innovation in all my projects."
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText
+                  primary="In addition to web development, I have a solid background in data
+              analysis, particularly with WebFOCUS."
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText
+                  primary="Have completed my bachelor's degree in Computer Science and
+              Engineering at GCET, Thanjavur."
+                />
+              </ListItem>
+            </List>
+          </Box>
         </div>
 
         <div className="md:mt-12 max-sm:mt-6">
-          <h1 className="text-xl md:text-2xl font-bold">My Skills</h1>
+          <h1 className="text-xl md:text-2xl font-bold max-md:text-center">
+            My Skills
+          </h1>
           <h1 className="mt-3 text-gray-400 text-sm md:text-base">
             Technologies I have worked with and I am familiar with.
           </h1>

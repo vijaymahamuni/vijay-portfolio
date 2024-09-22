@@ -3,8 +3,10 @@ const Project = () => {
   return (
     <div className="flex-grow bg-[#0a192f]  text-white">
       <div className="mx-auto w-9/12 lg:pt-12 md:pt-4 ">
-        <h1 className="text-2xl font-bold">Personal Projects</h1>
-        <h1 className="mt-2 text-gray-500">
+        <h1 className="lg:text-2xl max-md:text-xl lg:font-bold max-md:text-center">
+          Personal Projects
+        </h1>
+        <h1 className="mt-2 text-gray-500 max-md:text-center">
           This page lists some of my personal projects.
         </h1>
         <div className="flex flex-wrap lg:mt-6 md:mt-1 text-black justify-between">
