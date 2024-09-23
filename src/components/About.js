@@ -12,6 +12,8 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 const About = () => {
   const [isHoveredreact, setIsHoveredreact] = useState(false);
   const [isHoverJS, setIsHoverJS] = useState(false);
+  const [isHoverExpress, setIsHoverExpress] = useState(false);
+
   const [isHoverdcss, setIsHoverdcss] = useState(false);
   const [isHoveredtailwind, setIsHoveredtailwind] = useState(false);
   const [isHoverdredux, setIsHoverdredux] = useState(false);
@@ -25,7 +27,7 @@ const About = () => {
 
   return (
     <main className="flex-grow bg-[#0a192f] text-white">
-      <div className="mx-auto w-full md:w-9/12 lg:w-8/12 xl:w-9/12  max-sm:pt-4 md:pt-12 max-sm:ml-2">
+      <div className="mx-auto w-full md:w-9/12 max-md:h-[104%] lg:w-8/12 xl:w-9/12  max-sm:pt-2 md:pt-12 max-sm:ml-2">
         <div>
           <h1 className="text-xl md:text-2xl lg:font-bold max-md:text-center">
             About Me
@@ -214,6 +216,22 @@ const About = () => {
               {isHoveredNode && (
                 <p className="absolute mt-3 ml-16 text-sm  transform -translate-x-1/2 w-16 bg-white text-black rounded-sm">
                   NodeJS
+                </p>
+              )}
+            </div>
+            <div
+              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              onMouseEnter={() => setIsHoverExpress(true)}
+              onMouseLeave={() => setIsHoverExpress(false)}
+            >
+              <img
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"
+                className="w-8 md:w-10"
+                alt="Express"
+              />
+              {isHoverExpress && (
+                <p className="absolute mt-3 ml-16 text-sm  transform -translate-x-1/2 w-16 bg-white text-black rounded-sm">
+                  Express
                 </p>
               )}
             </div>

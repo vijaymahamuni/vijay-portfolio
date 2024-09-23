@@ -1,7 +1,7 @@
 import EastIcon from "@mui/icons-material/East";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Pdf_file from "../images/Vijay_Resume.pdf";
 const Home = () => {
   const headings = [
     "Frontend Developer",
@@ -45,6 +45,25 @@ const Home = () => {
 
   const handle_linkAbout = () => {
     navigate("/about");
+  };
+  const ContactInfo = () => {
+    navigate("/contact");
+  };
+  // Function will execute on click of button
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch(Pdf_file).then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = Pdf_file;
+        alink.click();
+      });
+    });
   };
   return (
     <main className="flex-grow bg-[#0a192f]  text-white">
@@ -96,10 +115,16 @@ const Home = () => {
           </div>
 
           <div className="mt-14 max-md:ml-10 flex">
-            <button className="p-[10px] border-2 border-gray-200  text-white rounded-3xl  hover:bg-gray-300 hover:text-black">
+            <button
+              className="p-[10px] border-2 border-gray-200  text-white rounded-3xl  hover:bg-gray-300 hover:text-black"
+              onClick={onButtonClick}
+            >
               Download CV
             </button>
-            <button className="p-[10px] text-white border-2 border-gray-200 ml-10 rounded-3xl hover:bg-gray-300 hover:text-black">
+            <button
+              className="p-[10px] text-white border-2 border-gray-200 ml-10 rounded-3xl hover:bg-gray-300 hover:text-black"
+              onClick={ContactInfo}
+            >
               Contact Info
             </button>
           </div>

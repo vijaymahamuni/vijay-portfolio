@@ -6,8 +6,12 @@ import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+// import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+// import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import { useState } from "react";
 const Header = () => {
   const location = useLocation();
+  // const [modeType, setModeType] = useState(false);
   // console.log("location", location.pathname);
   return (
     <div>
@@ -56,6 +60,17 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            {/* <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white ">
+              <Link
+                onClick={() => setModeType(!modeType)} // Toggling the boolean value
+              >
+                {modeType === true ? (
+                  <DarkModeOutlinedIcon />
+                ) : (
+                  <LightModeOutlinedIcon />
+                )}
+              </Link>
+            </li> */}
           </ul>
         </div>
         <div>
@@ -95,7 +110,7 @@ const Header = () => {
       </div>
       {/* Mobile Display */}
       <div className="lg:hidden">
-        <div className="flex justify-between p-2 m-2">
+        <div className="flex justify-between p-1 m-2">
           <div className="text-[18px] font-[500] text-white">
             Vijay Mahamuni
           </div>
@@ -134,7 +149,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="lg:hidden fixed bottom-0 left-0 w-full bg-[#1e293b] text-white flex justify-around items-center p-2">
+        <div className="lg:hidden fixed bottom-0 left-0 w-full bg-[#1e293b] text-white flex justify-around items-center p-1">
           <div className="flex flex-col items-center cursor-pointer">
             <Link
               to="/"

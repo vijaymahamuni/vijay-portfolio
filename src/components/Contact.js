@@ -41,15 +41,17 @@ const Contact = () => {
   };
   return (
     <div className="flex-grow bg-[#0a192f] text-white">
-      <div className="mx-auto w-9/12 pt-12 flex  justify-between lg:flex-row lg:justify-between">
+      <div className="mx-auto lg:w-9/12 lg:pt-12 max-md:h-[800px] lg:flex   lg:flex-row ">
         <div className="lg:w-1/2">
-          <h1 className="text-2xl font-bold">Contact</h1>
-          <h1 className="text-gray-400 mt-4">
+          <h1 className="text-2xl lg:font-bold max-md:mt-2 max-md:text-center">
+            Contact
+          </h1>
+          <h1 className="text-gray-400 mt-4 max-md:text-center">
             Get in touch or shoot me an email directly on
             vijaysethu0101@gmail.com
           </h1>
-          <div>
-            <div className="mt-10">
+          <div className="max-md:text-center">
+            <div className="mt-10 ">
               <input
                 type="text"
                 name="name"
@@ -124,19 +126,22 @@ const Contact = () => {
           </div>
         </div>
         <div></div>
-        <div className="lg:w-1/2 lg:pl-52 md:mt-24 lg:mt-0">
+        <div className="lg:w-1/2 lg:pl-52 max-md:mt-2 max-md:ml-10  lg:mt-0">
           <div className="lg:mt-4">
-            <p className="font-bold text-xl mt-6">Email</p>
-            <p className="mt-4 text-lg text-blue-400 cursor-pointer">
+            <p className=" lg:text-xl mt-6 ">Email</p>
+            <p className="lg:mt-4 text-lg text-blue-400 cursor-pointer">
               vijaysethu0101@gmail.com
             </p>
           </div>
           <div className="lg:mt-12 md:mt-10">
-            <p className="font-bold text-xl mt-6">Address</p>
-            <p className="mt-4 md:mt-2 text-lg text-blue-400">Chennai</p>
+            <p className=" lg:text-xl mt-4">Address</p>
+            <p className="lg:mt-4 md:mt-1 text-lg text-blue-400">Chennai</p>
           </div>
-          <div className="lg:mt-12 md:mt-6 ">
-            <p className="font-bold text-xl mt-6">Social</p>
+          <div className="lg:mt-12 md:mt-4 ">
+            <p className=" lg:text-xl mt-4">Mobile</p>
+            <p className="lg:mt-4 md:mt-1 text-lg text-blue-400">
+              +91 9384974729
+            </p>
           </div>
         </div>
       </div>

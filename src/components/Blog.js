@@ -1,6 +1,6 @@
 const Blog = () => {
   return (
-    <div className=" bg-[#0a192f] h-[87.5vh]  text-white">
+    <div className="flex-grow bg-[#0a192f]  text-white">
       <div className="mx-auto w-9/12 pt-12">
         <div>
           <h1 className="text-2xl font-bold">Blog Writing</h1>
