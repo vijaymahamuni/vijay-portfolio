@@ -8,7 +8,10 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 // import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 // import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-import { useState } from "react";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faTwitter, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
+// import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
+import bluetick from "../images/blue_tick2.jpg";
 const Header = () => {
   const location = useLocation();
   // const [modeType, setModeType] = useState(false);
@@ -17,7 +20,20 @@ const Header = () => {
     <div>
       {/* Desktop UI design */}
       <div className="lg:flex max-md:hidden lg:justify-between lg:items-center mx-auto w-9/12 text-white">
-        <div className="text-[18px] font-[500] ">Vijay Mahamuni</div>
+        <div className="text-[18px] font-[500] ">
+          Vijay Mahamuni
+          {/* <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+            </svg>
+          </span> */}
+        </div>
         <div className="  p-2 m-2 ">
           <ul className="flex">
             <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">

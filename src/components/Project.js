@@ -1,6 +1,6 @@
-import Portfolioimg from "../images/Portfolio.PNG";
+// import Portfolioimg from "../images/Portfolio.PNG";
 const Project = () => {
-  const Food_git = () => {};
+  // const Food_git = () => {};
   return (
     <div className="flex-grow bg-[#0a192f]  text-white">
       <div className="mx-auto max-md:h-[102%] w-9/12 lg:pt-12 md:pt-4 ">
@@ -11,7 +11,7 @@ const Project = () => {
           This page lists some of my personal projects.
         </h1>
         <div className="flex flex-wrap lg:mt-6 md:mt-1 text-black justify-between">
-          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-2 border-gray-400 shadow-lg">
+          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-[1px] border-gray-600 shadow-lg">
             <div className="w-[250px]  mr-6">
               <img
                 src="https://i3.ytimg.com/vi/d79Iqx5lBsg/maxresdefault.jpg"
@@ -39,7 +39,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-2 border-gray-400  ">
+          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-[1px] border-gray-600">
             <div className="w-[250px]  mr-6">
               <img
                 src="https://herobot.app/wp-content/uploads/2022/11/11-Reasons-Why-A-Chat-Application-Is-Great-For-Business_1.jpg"
@@ -59,7 +59,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-2 border-gray-400  ">
+          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-[1px] border-gray-600">
             <div className="w-[250px]  mr-6">
               <img
                 src="https://assets.devfolio.co/hackathons/ba2b3586ab9b4adf9542ca7757c5c553/projects/63d05d93a59d4d8fa0804d97985087ec/d7874679-bd47-4092-a610-f870036afdf9.jpeg"
@@ -79,7 +79,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-2 border-gray-400">
+          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-[1px] border-gray-600">
             <div className="w-[250px]  mr-6">
               <img
                 src="https://img.lovepik.com/photo/45015/7638.jpg_wh860.jpg"
@@ -107,7 +107,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-2 border-gray-400  ">
+          <div className="pt-[20px] pl-3 mt-4 w-[280px] h-[320px]  rounded-xl border-[1px] border-gray-600 ">
             <div className="w-[250px]  mr-6">
               <img
                 src="https://www.uffizio.com/wp-content/uploads/2022/06/leave-management.jpg"

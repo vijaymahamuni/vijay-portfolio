@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Project from "./components/Project";
 import Blog from "./components/Blog";
+import MyDeveloperJouney from "./components/MyDeveloperJourney";
 
 const AppLayout = () => {
   return (
@@ -42,6 +43,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/blog/:blogTitle",
+        element: <MyDeveloperJouney />,
       },
     ],
   },
