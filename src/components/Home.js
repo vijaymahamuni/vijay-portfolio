@@ -40,7 +40,7 @@ const Home = () => {
     const typingTimeout = setTimeout(handleTyping, isDeleting ? 100 : 150);
 
     return () => clearTimeout(typingTimeout);
-  }, [letterIndex, isDeleting, currentHeadingIndex]);
+  }, [letterIndex, isDeleting, currentHeadingIndex, headings]);
   const navigate = useNavigate();
 
   const handle_linkAbout = () => {

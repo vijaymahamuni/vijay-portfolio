@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Typography,
-  Box,
-} from "@mui/material";
+import { List, ListItem, ListItemIcon, ListItemText, Box } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const About = () => {
