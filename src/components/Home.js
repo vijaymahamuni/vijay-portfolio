@@ -1,5 +1,5 @@
 import EastIcon from "@mui/icons-material/East";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Pdf_file from "../images/Vijay_Resume.pdf";
 const Home = () => {
