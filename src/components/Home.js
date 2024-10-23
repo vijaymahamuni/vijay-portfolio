@@ -3,7 +3,10 @@ import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Pdf_file from "../images/Vijay_Resume.pdf";
 const Home = () => {
-  const headings = useMemo(() => ["Heading 1", "Heading 2", "Heading 3"], []);
+  const headings = useMemo(
+    () => ["Front End Developer", "Full Stack Developer", "Webfocus Developer"],
+    []
+  );
 
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -77,7 +80,7 @@ const Home = () => {
             Hey, I am Vijay
           </h1>
           <h1
-            className="lg:text-4xl max-sm:text-lg  sm:text-2xl sm:max-w-xl sm:mx-auto md:text-3xl lg:mx-0 font-bold text-blue-400 absolute mt-4 transition-opacity duration-500 max-md:ml-[90px]"
+            className="lg:text-5xl max-sm:text-lg  sm:text-2xl sm:max-w-xl sm:mx-auto md:text-3xl lg:mx-0 font-bold text-blue-400 absolute mt-4 transition-opacity duration-500 max-md:ml-[90px]"
             style={{ opacity: currentText ? 1 : 0 }}
           >
             {currentText}
