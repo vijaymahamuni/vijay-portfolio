@@ -36,7 +36,7 @@ const Home = () => {
         }
       }
     };
-
+    //this is deleting
     const typingTimeout = setTimeout(handleTyping, isDeleting ? 100 : 150);
 
     return () => clearTimeout(typingTimeout);
