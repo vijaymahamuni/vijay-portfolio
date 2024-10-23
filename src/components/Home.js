@@ -3,11 +3,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Pdf_file from "../images/Vijay_Resume.pdf";
 const Home = () => {
-  const headings = [
-    "Frontend Developer",
-    "Fullstack Developer",
-    "Webfocus Developer",
-  ];
+  const headings = useMemo(() => ["Heading 1", "Heading 2", "Heading 3"], []);
+
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
