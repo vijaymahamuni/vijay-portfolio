@@ -28,7 +28,6 @@ const Contact = () => {
       )
       .then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
           alert("Successfully Sent");
           setEmail("");
           setName("");

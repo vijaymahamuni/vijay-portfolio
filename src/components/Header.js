@@ -6,16 +6,9 @@ import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-// import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-// import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faTwitter, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
-// import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
-import bluetick from "../images/blue_tick2.jpg";
+
 const Header = () => {
   const location = useLocation();
-  // const [modeType, setModeType] = useState(false);
-  // console.log("location", location.pathname);
   return (
     <div>
       {/* Desktop UI design */}
