@@ -6,7 +6,7 @@ const Blog = () => {
     navigate("/blog/My_Developer_Journey");
   };
   return (
-    <div className="flex-grow bg-[#0a192f]  text-white cursor-pointer">
+    <div className="flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white cursor-pointer">
       <div className="mx-auto w-9/12 pt-12">
         <div>
           <h1 className="text-2xl font-bold">Blog Writing</h1>
@@ -20,7 +20,7 @@ const Blog = () => {
                 alt=""
                 className="h-48  w-[250px]"
               />
-              <h1 className="text-center text-white  mt-2">
+              <h1 className="text-center text-black dark:text-white  mt-2">
                 My Developer Journey
               </h1>
             </div>

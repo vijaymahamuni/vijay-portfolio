@@ -2,7 +2,7 @@
 const Project = () => {
   // const Food_git = () => {};
   return (
-    <div className="flex-grow bg-[#0a192f]  text-white">
+    <div className="flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white">
       <div className="mx-auto max-md:h-[102%] w-9/12 lg:pt-12 md:pt-4 ">
         <h1 className="lg:text-2xl max-md:text-xl max-md:mt-1 lg:font-bold max-md:text-center">
           Personal Projects
@@ -18,12 +18,12 @@ const Project = () => {
                 alt=""
                 className="h-48 rounded-2xl"
               />
-              <h1 className="text-center text-white font-bold mt-2">
+              <h1 className="text-center text-black dark:text-white font-bold mt-2">
                 Food App
               </h1>
-              <div className="text-white flex justify-around mt-4">
+              <div className="text-black dark:text-white flex justify-around mt-4">
                 <button
-                  className="p-1 w-24 border-2 border-gray-400 rounded-2xl  hover:bg-white hover:text-black"
+                  className="p-1 w-24 border-2 border-gray-400 rounded-2xl   hover:bg-[#fedba3] hover:text-black"
                   onClick={() => {
                     window.open(
                       "https://github.com/vijaymahamuni/food-app",
@@ -33,7 +33,7 @@ const Project = () => {
                 >
                   Github
                 </button>
-                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-white hover:text-black">
+                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-[#fedba3] hover:text-black">
                   Link
                 </button>
               </div>
@@ -46,14 +46,14 @@ const Project = () => {
                 alt=""
                 className="h-48 rounded-2xl"
               />
-              <h1 className="text-center text-white font-bold mt-2">
+              <h1 className="text-center text-black dark:text-white  font-bold mt-2">
                 Chat App
               </h1>
-              <div className="text-white flex justify-around mt-4">
-                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl  hover:bg-white hover:text-black">
+              <div className="text-black dark:text-white  flex justify-around mt-4">
+                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl   hover:bg-[#dde8fe] hover:text-black">
                   Github
                 </button>
-                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-white hover:text-black">
+                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-[#dde8fe] hover:text-black">
                   Link
                 </button>
               </div>
@@ -66,14 +66,14 @@ const Project = () => {
                 alt=""
                 className="h-48 rounded-2xl"
               />
-              <h1 className="text-center text-white font-bold mt-2">
+              <h1 className="text-center text-black dark:text-white font-bold mt-2">
                 Netflix Clone
               </h1>
-              <div className="text-white flex justify-around mt-4">
-                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl  hover:bg-white hover:text-black">
+              <div className="text-black dark:text-white  flex justify-around mt-4">
+                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl  hover:bg-[#dde8fe] hover:text-black">
                   Github
                 </button>
-                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-white hover:text-black">
+                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-[#dde8fe] hover:text-black">
                   Link
                 </button>
               </div>
@@ -86,10 +86,10 @@ const Project = () => {
                 alt=""
                 className="h-48 rounded-2xl"
               />
-              <h1 className="text-center text-white font-bold mt-2">
+              <h1 className="text-center text-black dark:text-white  font-bold mt-2">
                 My Portfolio
               </h1>
-              <div className="text-white flex justify-around mt-4">
+              <div className="text-black dark:text-white  flex justify-around mt-4">
                 <button
                   className="p-1 w-24 border-2 border-gray-400 rounded-2xl  hover:bg-white hover:text-black"
                   onClick={() => {
@@ -114,12 +114,12 @@ const Project = () => {
                 alt=""
                 className="h-48 rounded-2xl"
               />
-              <h1 className="text-center text-white font-bold mt-2">
+              <h1 className="text-center text-black dark:text-white font-bold mt-2">
                 Leave Management
               </h1>
-              <div className="text-white flex justify-around mt-4">
+              <div className="text-black dark:text-white  flex justify-around mt-4">
                 <button
-                  className="p-1 w-24 border-2 border-gray-400 rounded-2xl  hover:bg-white hover:text-black"
+                  className="p-1 w-24 border-2 border-gray-400 rounded-2xl  hover:bg-[#8ccffa] hover:text-black"
                   onClick={() => {
                     window.open(
                       "https://github.com/vijaymahamuni/leavemanagement-frontend",
@@ -129,7 +129,7 @@ const Project = () => {
                 >
                   Github
                 </button>
-                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-white hover:text-black">
+                <button className="p-1 w-24 border-2 border-gray-400 rounded-2xl hover:bg-[#8ccffa] hover:text-black">
                   Link
                 </button>
               </div>

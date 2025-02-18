@@ -10,12 +10,17 @@ import Home from "./components/Home";
 import Project from "./components/Project";
 import Blog from "./components/Blog";
 import MyDeveloperJouney from "./components/MyDeveloperJourney";
+import { ThemeProvider } from "./utils/ThemeContext";
 
 const AppLayout = () => {
   return (
-    <div className="w-full h-screen flex flex-col">
-      <App />
-      <Outlet />
+    <div className="w-full h-screen flex flex-col bg-white dark:bg-gray-700">
+      <React.StrictMode>
+        <ThemeProvider>
+          <App />
+          <Outlet />
+        </ThemeProvider>
+      </React.StrictMode>
     </div>
   );
 };

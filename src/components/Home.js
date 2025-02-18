@@ -66,7 +66,7 @@ const Home = () => {
     });
   };
   return (
-    <main className="flex-grow bg-[#0a192f]  text-white">
+    <main className="bg-gray-100 dark:bg-[#0a192f] flex-grow text-black dark:text-white">
       <div className="mx-auto max-sm:ml-2 max-sm:w-full sm:w-10/12 md:w-10/12 lg:w-9/12 xl:w-9/12 lg:mt-24 max-md:mt-8 lg:flex lg:justify-between">
         <div>
           <div className="lg:hidden">
@@ -80,7 +80,7 @@ const Home = () => {
             Hey, I am Vijay
           </h1>
           <h1
-            className="lg:text-5xl max-sm:text-lg  sm:text-2xl sm:max-w-xl sm:mx-auto md:text-3xl lg:mx-0 font-bold text-blue-400 absolute mt-4 transition-opacity duration-500 max-md:ml-[90px]"
+            className="lg:text-5xl max-sm:text-lg  sm:text-2xl sm:max-w-xl sm:mx-auto md:text-3xl lg:mx-0 font-bold text-blue-500 dark:text-blue-400 absolute mt-4 transition-opacity duration-500 max-md:ml-[90px]"
             style={{ opacity: currentText ? 1 : 0 }}
           >
             {currentText}
@@ -108,7 +108,7 @@ const Home = () => {
           </h1>
 
           <div className="mt-8">
-            <h1 className="mt-24 max-md:mt-20 max-md:text-center text-base text-white sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
+            <h1 className="mt-24 max-md:mt-20 max-md:text-center text-base text-black dark:text-white sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
               I am a Full-Stack Developer/Data Analyst. I am currently working
               at Tigma Technologies as a Front-End Developer / Data Analyst
             </h1>
@@ -116,20 +116,20 @@ const Home = () => {
 
           <div className="mt-14 max-md:ml-10 flex">
             <button
-              className="p-[10px] border-2 border-gray-200  text-white rounded-3xl  hover:bg-gray-300 hover:text-black"
+              className="p-[10px]  text-black dark:text-white border-2 border-gray-400 dark:border-gray-200  rounded-3xl  hover:dark:bg-gray-300 hover:bg-blue-500 hover:text-white  hover:dark:text-black"
               onClick={onButtonClick}
             >
               Download CV
             </button>
             <button
-              className="p-[10px] text-white border-2 border-gray-200 ml-10 rounded-3xl hover:bg-gray-300 hover:text-black"
+              className="p-[10px] text-black dark:text-white border-2 border-gray-400 dark:border-gray-200 ml-10 rounded-3xl hover:dark:bg-gray-300 hover:bg-blue-500 hover:text-white hover:dark:text-black"
               onClick={ContactInfo}
             >
               Contact Info
             </button>
           </div>
           <p
-            className="mt-12 font-bold text-gray-400 cursor-pointer max-md:text-center"
+            className="mt-12 font-bold  text-gray-600 dark:text-gray-400 cursor-pointer max-md:text-center"
             onClick={handle_linkAbout}
           >
             See More About Me

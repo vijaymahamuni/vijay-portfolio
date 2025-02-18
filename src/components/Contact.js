@@ -39,7 +39,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="flex-grow bg-[#0a192f] text-white">
+    <div className="flex-grow bg-gray-100 dark:bg-[#0a192f] text-black dark:text-white">
       <div className="mx-auto lg:w-9/12 lg:pt-12 max-md:h-[800px] lg:flex   lg:flex-row ">
         <div className="lg:w-1/2">
           <h1 className="text-2xl lg:font-bold max-md:mt-2 max-md:text-center">
@@ -57,7 +57,7 @@ const Contact = () => {
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="bg-[#0a192f] text-white p-2 w-10/12 font-bold rounded-md"
+                className="dark:bg-[#0a192f] bg-gray-100 dark:text-white text-black p-2 w-10/12 font-bold rounded-md"
                 style={{ border: "0.5px solid gray" }}
               />
             </div>
@@ -68,7 +68,7 @@ const Contact = () => {
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="bg-[#0a192f] text-white p-2 w-10/12 font-bold rounded-md"
+                className="dark:bg-[#0a192f] bg-gray-100 dark:text-white text-black p-2 w-10/12 font-bold rounded-md"
                 style={{ border: "0.5px solid gray" }}
               />
             </div>
@@ -79,7 +79,7 @@ const Contact = () => {
                 placeholder="Message"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="bg-[#0a192f] text-white p-2 w-10/12 h-24 font-bold rounded-md"
+                className="dark:bg-[#0a192f] bg-gray-100 dark:text-white text-black p-2 w-10/12 h-24 font-bold rounded-md"
                 style={{ border: "0.5px solid gray" }}
               />
             </div>
@@ -95,7 +95,7 @@ const Contact = () => {
               className="mt-10 cursor-pointer hidden md:hidden lg:flex"
               onClick={backToHome}
             >
-              <p className="text-[#e1e1e1]">
+              <p className="dark:text-[#e1e1e1] text-black">
                 Go Back Home
                 <span className="ml-6 inline-block animate-move-right">
                   <EastIcon />

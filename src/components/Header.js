@@ -6,14 +6,18 @@ import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { useContext } from "react";
+import { ThemeContext } from "../utils/ThemeContext";
 
 const Header = () => {
   const location = useLocation();
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
-    <div>
+    <div className="bg-white dark:bg-[#374151]">
       {/* Desktop UI design */}
-      <div className="lg:flex max-md:hidden lg:justify-between lg:items-center mx-auto w-9/12 text-white">
-        <div className="text-[18px] font-[500] ">
+      <div className="lg:flex  max-md:hidden lg:justify-between lg:items-center mx-auto w-9/12 text-gray-700 dark:text-gray-200">
+        <div className="text-[18px] font-[650] ">
           Vijay Mahamuni
           {/* <span>
             <svg
@@ -29,47 +33,72 @@ const Header = () => {
         </div>
         <div className="  p-2 m-2 ">
           <ul className="flex">
-            <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
+            <li className="mx-5 p-2 text-[18px] font-[600]  text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <Link
                 to="/"
-                className={location.pathname === "/" ? "text-white" : ""}
+                className={
+                  location.pathname === "/"
+                    ? "text-gray-700 font-bold dark:text-white"
+                    : ""
+                }
               >
                 Home
               </Link>
             </li>
-            <li className="mx-5 p-2  text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
+            <li className="mx-5 p-2  text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <Link
                 to="/about"
-                className={location.pathname === "/about" ? "text-white" : ""}
+                className={
+                  location.pathname === "/about"
+                    ? "text-gray-700 font-bold dark:text-white"
+                    : ""
+                }
               >
                 About
               </Link>
             </li>
-            <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
+            <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <Link
                 to="/project"
-                className={location.pathname === "/project" ? "text-white" : ""}
+                className={
+                  location.pathname === "/project"
+                    ? "text-gray-700 font-bold dark:text-white"
+                    : ""
+                }
               >
                 Projects
               </Link>
             </li>
-            <li className="mx-5 p-2  text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
+            <li className="mx-5 p-2  text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <Link
                 to="/blog"
-                className={location.pathname === "/blog" ? "text-white" : ""}
+                className={
+                  location.pathname === "/blog"
+                    ? "text-gray-700 font-bold dark:text-white"
+                    : ""
+                }
               >
                 Blog
               </Link>
             </li>
-            <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white">
+            <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <Link
                 to="/contact"
-                className={location.pathname === "/contact" ? "text-white" : ""}
+                className={
+                  location.pathname === "/contact"
+                    ? "text-gray-700 font-bold dark:text-white"
+                    : ""
+                }
               >
                 Contact
               </Link>
             </li>
-            {/* <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-white ">
+            <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
+              <button onClick={toggleTheme}>
+                {theme === "dark" ? "☀️" : "🌙"}
+              </button>
+            </li>
+            {/* <li className="mx-5 p-2 text-[18px] font-[400] text-gray-500 cursor-pointer hover:text-blue-400 ">
               <Link
                 onClick={() => setModeType(!modeType)} // Toggling the boolean value
               >
@@ -84,7 +113,7 @@ const Header = () => {
         </div>
         <div>
           <div className="flex md:justify-start">
-            <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+            <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-500 dark:text-gray-400 hover:text-blue-400">
               <LinkedInIcon
                 fontSize="medium"
                 onClick={() => {
@@ -95,7 +124,7 @@ const Header = () => {
                 }}
               />
             </h1>
-            <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+            <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-500 dark:text-gray-400 hover:text-blue-400">
               <InstagramIcon
                 fontSize="medium"
                 onClick={() => {
@@ -106,7 +135,7 @@ const Header = () => {
                 }}
               />
             </h1>
-            <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+            <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-500 dark:text-gray-400 hover:text-blue-400">
               <GitHubIcon
                 fontSize="medium"
                 onClick={() => {
@@ -125,7 +154,7 @@ const Header = () => {
           </div>
           <div>
             <div className="flex md:justify-start">
-              <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-blue-400">
                 <LinkedInIcon
                   fontSize="medium"
                   onClick={() => {
@@ -136,7 +165,7 @@ const Header = () => {
                   }}
                 />
               </h1>
-              <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-400 hover:text-blue-400">
                 <InstagramIcon
                   fontSize="medium"
                   onClick={() => {
@@ -147,7 +176,7 @@ const Header = () => {
                   }}
                 />
               </h1>
-              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-white">
+              <h1 className="mr-5 hover:scale-125 cursor-pointer text-gray-400 hover:text-blue-400">
                 <GitHubIcon
                   fontSize="medium"
                   onClick={() => {
@@ -158,7 +187,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="lg:hidden fixed bottom-0 left-0 w-full bg-[#1e293b] text-white flex justify-around items-center p-1">
+        <div className="lg:hidden fixed bottom-0 left-0 w-full bg-gray-100 dark:bg-[#1e293b] text-white flex justify-around items-center p-1">
           <div className="flex flex-col items-center cursor-pointer">
             <Link
               to="/"

@@ -19,7 +19,7 @@ const About = () => {
   const [isHoveredRtnative, setIsHoveredRtnative] = useState(false);
 
   return (
-    <main className="flex-grow bg-[#0a192f] text-white">
+    <main className="flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white">
       <div className="mx-auto w-full md:w-9/12 max-md:h-[104%] lg:w-8/12 xl:w-9/12  max-sm:pt-2 md:pt-12 max-sm:ml-2">
         <div>
           <h1 className="text-xl md:text-2xl lg:font-bold max-md:text-center">
@@ -93,7 +93,7 @@ const About = () => {
           <div className="md:mt-4 max:mt-3 flex flex-wrap justify-start">
             {/* Frontend Tech Icons */}
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoverJS(true)}
               onMouseLeave={() => setIsHoverJS(false)}
             >
@@ -109,7 +109,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoveredreact(true)}
               onMouseLeave={() => setIsHoveredreact(false)}
             >
@@ -125,7 +125,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoveredHtml(true)}
               onMouseLeave={() => setIsHoveredHtml(false)}
             >
@@ -141,7 +141,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoverdcss(true)}
               onMouseLeave={() => setIsHoverdcss(false)}
             >
@@ -157,7 +157,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoveredtailwind(true)}
               onMouseLeave={() => setIsHoveredtailwind(false)}
             >
@@ -173,7 +173,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoverdredux(true)}
               onMouseLeave={() => setIsHoverdredux(false)}
             >
@@ -197,7 +197,7 @@ const About = () => {
           <div className="mt-4 flex flex-wrap justify-start">
             {/* Backend Tech Icons */}
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:dark:bg-[#374151] bg-gray-300 bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoveredNode(true)}
               onMouseLeave={() => setIsHoveredNode(false)}
             >
@@ -213,7 +213,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoverExpress(true)}
               onMouseLeave={() => setIsHoverExpress(false)}
             >
@@ -229,7 +229,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoveredMysql(true)}
               onMouseLeave={() => setIsHoveredMysql(false)}
             >
@@ -245,7 +245,7 @@ const About = () => {
               )}
             </div>
             <div
-              className="cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoveredMongodb(true)}
               onMouseLeave={() => setIsHoveredMongodb(false)}
             >
@@ -268,7 +268,7 @@ const About = () => {
 
           <div className="mt-4">
             <div
-              className="cursor-pointer p-2 bg-[#374151] w-14 rounded-md flex justify-center items-center m-2"
+              className="cursor-pointer p-2 dark:bg-[#374151] bg-gray-300 w-14 rounded-md flex justify-center items-center m-2"
               onMouseEnter={() => setIsHoveredWebfocus(true)}
               onMouseLeave={() => setIsHoveredWebfocus(false)}
             >
@@ -288,7 +288,7 @@ const About = () => {
           <h1 className="mt-4 text-lg md:text-xl">Mobile Development</h1>
           <div className="mt-1 flex flex-wrap justify-start">
             <div
-              className="mt-4 cursor-pointer p-2 text-center bg-[#374151] rounded-md m-2 flex-shrink-0"
+              className="mt-4 cursor-pointer p-2 text-center dark:bg-[#374151] bg-gray-300 rounded-md m-2 flex-shrink-0"
               onMouseEnter={() => setIsHoveredRtnative(true)}
               onMouseLeave={() => setIsHoveredRtnative(false)}
             >
