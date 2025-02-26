@@ -44,7 +44,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handle_linkAbout = () => {
-    navigate("/about");
+    navigate("/about-me");
   };
   const ContactInfo = () => {
     navigate("/contact");
@@ -109,8 +109,9 @@ const Home = () => {
 
           <div className="mt-8">
             <h1 className="mt-24 max-md:mt-20 max-md:text-center text-base text-black dark:text-white sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0">
-              I am a Full-Stack Developer/Data Analyst. I am currently working
-              at Tigma Technologies as a Front-End Developer / Data Analyst
+              I am passionate React Developer who loves building interactive and
+              dynamic web applications.With expertise in WebFOCUS and a solid
+              understanding of backend technologies.
             </h1>
           </div>
 
@@ -119,7 +120,7 @@ const Home = () => {
               className="p-[10px]  text-black dark:text-white border-2 border-gray-400 dark:border-gray-200  rounded-3xl  hover:dark:bg-gray-300 hover:bg-blue-500 hover:text-white  hover:dark:text-black"
               onClick={onButtonClick}
             >
-              Download CV
+              Resume
             </button>
             <button
               className="p-[10px] text-black dark:text-white border-2 border-gray-400 dark:border-gray-200 ml-10 rounded-3xl hover:dark:bg-gray-300 hover:bg-blue-500 hover:text-white hover:dark:text-black"

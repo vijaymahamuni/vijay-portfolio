@@ -11,14 +11,17 @@ import Project from "./components/Project";
 import Blog from "./components/Blog";
 import MyDeveloperJouney from "./components/MyDeveloperJourney";
 import { ThemeProvider } from "./utils/ThemeContext";
-
+import Experience from "./components/Experience";
+import About_me from "./components/About_me";
 const AppLayout = () => {
   return (
     <div className="w-full h-screen flex flex-col bg-white dark:bg-gray-700">
       <React.StrictMode>
         <ThemeProvider>
           <App />
+          {/* <ChakraProvider> */}
           <Outlet />
+          {/* </ChakraProvider> */}
         </ThemeProvider>
       </React.StrictMode>
     </div>
@@ -34,7 +37,7 @@ const appRouter = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "/skills",
         element: <About />,
       },
       {
@@ -42,13 +45,21 @@ const appRouter = createBrowserRouter([
         element: <Contact />,
       },
       {
+        path: "/about-me",
+        element: <About_me />,
+      },
+      {
         path: "/project",
         element: <Project />,
       },
       {
-        path: "/blog",
-        element: <Blog />,
+        path: "/portfolio",
+        element: <Experience />,
       },
+      // {
+      //   path: "/blog",
+      //   element: <Blog />,
+      // },
       {
         path: "/blog/:blogTitle",
         element: <MyDeveloperJouney />,

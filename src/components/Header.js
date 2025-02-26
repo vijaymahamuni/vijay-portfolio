@@ -47,14 +47,38 @@ const Header = () => {
             </li>
             <li className="mx-5 p-2  text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <Link
-                to="/about"
+                to="/skills"
                 className={
-                  location.pathname === "/about"
+                  location.pathname === "/skills"
                     ? "text-gray-700 font-bold dark:text-white"
                     : ""
                 }
               >
-                About
+                Skills
+              </Link>
+            </li>
+            <li className="mx-5 p-2  text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
+              <Link
+                to="/portfolio"
+                className={
+                  location.pathname === "/portfolio"
+                    ? "text-gray-700 font-bold dark:text-white"
+                    : ""
+                }
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li className="mx-5 p-2  text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
+              <Link
+                to="/about-me"
+                className={
+                  location.pathname === "/about-me"
+                    ? "text-gray-700 font-bold dark:text-white"
+                    : ""
+                }
+              >
+                About Me
               </Link>
             </li>
             <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
@@ -69,19 +93,8 @@ const Header = () => {
                 Projects
               </Link>
             </li>
-            <li className="mx-5 p-2  text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
-              <Link
-                to="/blog"
-                className={
-                  location.pathname === "/blog"
-                    ? "text-gray-700 font-bold dark:text-white"
-                    : ""
-                }
-              >
-                Blog
-              </Link>
-            </li>
-            <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
+
+            {/* <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <Link
                 to="/contact"
                 className={
@@ -92,7 +105,7 @@ const Header = () => {
               >
                 Contact
               </Link>
-            </li>
+            </li> */}
             <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
               <button onClick={toggleTheme}>
                 {theme === "dark" ? "☀️" : "🌙"}

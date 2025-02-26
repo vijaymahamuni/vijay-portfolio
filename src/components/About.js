@@ -21,7 +21,7 @@ const About = () => {
   return (
     <main className="flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white">
       <div className="mx-auto w-full md:w-9/12 max-md:h-[104%] lg:w-8/12 xl:w-9/12  max-sm:pt-2 md:pt-12 max-sm:ml-2">
-        <div>
+        {/* <div>
           <h1 className="text-xl md:text-2xl lg:font-bold max-md:text-center">
             About Me
           </h1>
@@ -77,9 +77,9 @@ const About = () => {
               </ListItem>
             </List>
           </Box>
-        </div>
+        </div> */}
 
-        <div className="md:mt-12 max-sm:mt-6">
+        <div className="md:mt-0 max-sm:mt-5">
           <h1 className="text-xl md:text-2xl font-bold max-md:text-center">
             My Skills
           </h1>
@@ -304,6 +304,29 @@ const About = () => {
               )}
             </div>
           </div>
+        </div>
+        <div className="md:mt-10 max-sm:mt-5">
+          <h1 className="text-xl md:text-2xl font-bold max-md:text-center">
+            My Certifications
+          </h1>
+          <Box sx={{ maxWidth: "md" }}>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText primary="TCA - TIBCO WebFOCUS - By TIBCO" />
+              </ListItem>
+            </List>
+            <List>
+              <ListItem>
+                <ListItemIcon>
+                  <CheckCircleIcon sx={{ color: "gray" }} />
+                </ListItemIcon>
+                <ListItemText primary="TCP - TIBCO WebFOCUS - By TIBCO" />
+              </ListItem>
+            </List>
+          </Box>
         </div>
       </div>
     </main>
