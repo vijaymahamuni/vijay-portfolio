@@ -8,6 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { useContext } from "react";
 import { ThemeContext } from "../utils/ThemeContext";
+import { Laptop, Timeline, Work } from "@mui/icons-material";
 
 const Header = () => {
   const location = useLocation();
@@ -161,8 +162,8 @@ const Header = () => {
       </div>
       {/* Mobile Display */}
       <div className="lg:hidden">
-        <div className="flex justify-between p-1 m-2">
-          <div className="text-[18px] font-[500] text-white">
+        <div className="flex justify-between p-[13px] m-0">
+          <div className="text-[18px] font-[500] text-black dark:text-white">
             Vijay Mahamuni
           </div>
           <div>
@@ -197,6 +198,14 @@ const Header = () => {
                   }}
                 />
               </h1>
+              <h1 className=" hover:scale-125 cursor-pointer text-gray-400 hover:text-blue-400">
+                <button onClick={toggleTheme}>
+                  {theme === "dark" ? "☀️" : "🌙"}
+                </button>
+              </h1>
+              {/* <li className="mx-5 p-2 text-[18px] font-[600] text-gray-500 dark:text-gray-400 cursor-pointer hover:text-blue-400">
+               
+              </li> */}
             </div>
           </div>
         </div>
@@ -215,9 +224,33 @@ const Header = () => {
           </div>
           <div className="flex flex-col items-center cursor-pointer">
             <Link
-              to="/about"
+              to="/skills"
               className={`${
-                location.pathname === "/about"
+                location.pathname === "/skills"
+                  ? "bg-blue-500 text-white p-1 rounded-full shadow-lg"
+                  : "text-gray-500"
+              }`}
+            >
+              <Laptop fontSize="large" />
+            </Link>
+          </div>
+          <div className="flex flex-col items-center cursor-pointer">
+            <Link
+              to="/portfolio"
+              className={`${
+                location.pathname === "/portfolio"
+                  ? "bg-blue-500 text-white p-1 rounded-full shadow-lg"
+                  : "text-gray-500"
+              }`}
+            >
+              <Timeline fontSize="large" />
+            </Link>
+          </div>
+          <div className="flex flex-col items-center cursor-pointer">
+            <Link
+              to="/about-me"
+              className={`${
+                location.pathname === "/about-me"
                   ? "bg-blue-500 text-white p-1 rounded-full shadow-lg"
                   : "text-gray-500"
               }`}
@@ -245,18 +278,6 @@ const Header = () => {
             <LibraryBooksIcon fontSize="large" />
           </Link>
         </div> */}
-          <div className="flex flex-col items-center cursor-pointer">
-            <Link
-              to="/contact"
-              className={`${
-                location.pathname === "/contact"
-                  ? "bg-blue-500 text-white p-1 rounded-full shadow-lg"
-                  : "text-gray-500"
-              }`}
-            >
-              <AddIcCallIcon fontSize="large" />
-            </Link>
-          </div>
         </div>
       </div>
     </div>

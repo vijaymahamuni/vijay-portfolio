@@ -19,7 +19,7 @@ import Tigma_img from "../images/logo_tigma.png";
 const Experience = () => {
   return (
     <main className="flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white">
-      <div className="mx-auto w-full md:w-9/12 max-md:h-[104%] lg:w-8/12 xl:w-9/12  max-sm:pt-2 md:pt-12 max-sm:ml-2">
+      <div className="mx-auto  md:w-9/12 max-md:h-[101%] max-md:w-12/12 lg:w-8/12 xl:w-9/12  max-sm:pt-2 md:pt-12 max-sm:ml-2">
         <h1 className="text-2xl text-center font-bold">My Journey</h1>
         <div className="mt-10">
           <VerticalTimeline>
@@ -194,7 +194,7 @@ const Experience = () => {
               <h1 className="vertical-timeline-element-title text-[#08a078] text-[22px] ">
                 First Job as a Trainee
               </h1>
-              <div className="flex ">
+              <div className="lg:flex ">
                 <div>
                   <Box sx={{ maxWidth: "md" }}>
                     <List>
@@ -209,7 +209,7 @@ const Experience = () => {
                       </ListItem>
                     </List>
                   </Box>
-                  <Box sx={{ maxWidth: "md" }} className="w-[300px]">
+                  <Box sx={{ maxWidth: "md" }}>
                     <List>
                       <ListItem>
                         <ListItemIcon>
@@ -225,7 +225,7 @@ const Experience = () => {
                   </Box>
                 </div>
                 <div>
-                  <img src={Tigma_img} className="mt-8  w-[200px] h-[100px]" />
+                  <img src={Tigma_img} className="mt-10  w-[300px] h-[70px]" />
                 </div>
               </div>
             </VerticalTimelineElement>
@@ -242,7 +242,7 @@ const Experience = () => {
               <h1 className="vertical-timeline-element-title text-[#08a078] text-[22px] ">
                 College Graduation
               </h1>
-              <div className="flex ">
+              <div className="lg:flex">
                 <div>
                   <Box sx={{ maxWidth: "md" }}>
                     <List>

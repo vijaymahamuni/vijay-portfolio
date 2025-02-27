@@ -120,7 +120,7 @@ const Home = () => {
               className="p-[10px]  text-black dark:text-white border-2 border-gray-400 dark:border-gray-200  rounded-3xl  hover:dark:bg-gray-300 hover:bg-blue-500 hover:text-white  hover:dark:text-black"
               onClick={onButtonClick}
             >
-              Resume
+              Download CV
             </button>
             <button
               className="p-[10px] text-black dark:text-white border-2 border-gray-400 dark:border-gray-200 ml-10 rounded-3xl hover:dark:bg-gray-300 hover:bg-blue-500 hover:text-white hover:dark:text-black"
