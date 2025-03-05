@@ -2,6 +2,7 @@ import EastIcon from "@mui/icons-material/East";
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Pdf_file from "../images/Vijay_Resume.pdf";
+import FootingPage from "./FootingPage";
 const Home = () => {
   const headings = useMemo(
     () => ["Front End Developer", "Full Stack Developer", "Webfocus Developer"],
@@ -166,6 +167,9 @@ const Home = () => {
             alt=""
           />
         </div>
+      </div>
+      <div className="sm:w-10/12 md:w-10/12 lg:w-11/12 xl:w-9/12 ml-[185px] mt-32 mb-16">
+        <FootingPage />
       </div>
     </main>
   );

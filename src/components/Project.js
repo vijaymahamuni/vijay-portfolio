@@ -1,3 +1,5 @@
+import FootingPage from "./FootingPage";
+
 // import Portfolioimg from "../images/Portfolio.PNG";
 const Project = () => {
   // const Food_git = () => {};
@@ -135,6 +137,9 @@ const Project = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mt-36 mb-16">
+          <FootingPage />
         </div>
       </div>
     </div>

@@ -16,6 +16,7 @@ import {
 } from "@mui/icons-material";
 import GCE_Clg from "../images/GCE_Clg.png";
 import Tigma_img from "../images/logo_tigma.png";
+import FootingPage from "./FootingPage";
 const Experience = () => {
   return (
     <main className="flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white">
@@ -265,6 +266,9 @@ const Experience = () => {
               </div>
             </VerticalTimelineElement>
           </VerticalTimeline>
+        </div>
+        <div className="mt-36 mb-16">
+          <FootingPage />
         </div>
       </div>
     </main>

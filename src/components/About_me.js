@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { List, ListItem, ListItemIcon, ListItemText, Box } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-
+import FootingPage from "./FootingPage";
 const About_me = () => {
-  const [isHoveredreact, setIsHoveredreact] = useState(false);
-  const [isHoverJS, setIsHoverJS] = useState(false);
-  const [isHoverExpress, setIsHoverExpress] = useState(false);
+  // const [isHoveredreact, setIsHoveredreact] = useState(false);
+  // const [isHoverJS, setIsHoverJS] = useState(false);
+  // const [isHoverExpress, setIsHoverExpress] = useState(false);
 
-  const [isHoverdcss, setIsHoverdcss] = useState(false);
-  const [isHoveredtailwind, setIsHoveredtailwind] = useState(false);
-  const [isHoverdredux, setIsHoverdredux] = useState(false);
-  const [isHoveredHtml, setIsHoveredHtml] = useState(false);
+  // const [isHoverdcss, setIsHoverdcss] = useState(false);
+  // const [isHoveredtailwind, setIsHoveredtailwind] = useState(false);
+  // const [isHoverdredux, setIsHoverdredux] = useState(false);
+  // const [isHoveredHtml, setIsHoveredHtml] = useState(false);
 
-  const [isHoveredNode, setIsHoveredNode] = useState(false);
-  const [isHoveredMysql, setIsHoveredMysql] = useState(false);
-  const [isHoveredMongodb, setIsHoveredMongodb] = useState(false);
-  const [isHoveredWebfocus, setIsHoveredWebfocus] = useState(false);
-  const [isHoveredRtnative, setIsHoveredRtnative] = useState(false);
+  // const [isHoveredNode, setIsHoveredNode] = useState(false);
+  // const [isHoveredMysql, setIsHoveredMysql] = useState(false);
+  // const [isHoveredMongodb, setIsHoveredMongodb] = useState(false);
+  // const [isHoveredWebfocus, setIsHoveredWebfocus] = useState(false);
+  // const [isHoveredRtnative, setIsHoveredRtnative] = useState(false);
 
   return (
     <main className=" flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white">
@@ -104,6 +104,9 @@ Full-Stack Development Knowledge – Through personal projects, I have expanded 
               </List>
             </Box>
           </div>
+        </div>
+        <div className="mt-16 mb-16">
+          <FootingPage />
         </div>
       </div>
     </main>

@@ -3,6 +3,7 @@ import EastIcon from "@mui/icons-material/East";
 import { useNavigate } from "react-router-dom";
 
 import emailjs from "emailjs-com";
+import FootingPage from "./FootingPage";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -143,6 +144,9 @@ const Contact = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="sm:w-10/12 md:w-10/12 lg:w-11/12 xl:w-9/12 ml-[185px] mt-32 mb-16">
+        <FootingPage />
       </div>
     </div>
   );

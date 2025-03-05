@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { List, ListItem, ListItemIcon, ListItemText, Box } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import FootingPage from "./FootingPage";
 
 const About = () => {
   const [isHoveredreact, setIsHoveredreact] = useState(false);
@@ -327,6 +328,9 @@ const About = () => {
               </ListItem>
             </List>
           </Box>
+        </div>
+        <div className="mt-36 mb-16">
+          <FootingPage />
         </div>
       </div>
     </main>
