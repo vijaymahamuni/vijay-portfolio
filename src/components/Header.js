@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className="bg-white dark:bg-[#374151]">
       {/* Desktop UI design */}
-      <div className="lg:flex  max-md:hidden lg:justify-between lg:items-center mx-auto w-9/12 text-gray-700 dark:text-gray-200">
+      <div className="lg:flex  max-md:hidden md:hidden  lg:justify-between lg:items-center mx-auto w-9/12 text-gray-700 dark:text-gray-200">
         <div className="text-[18px] font-[650] ">
           Vijay Mahamuni
           {/* <span>
@@ -209,7 +209,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="lg:hidden fixed bottom-0 left-0 w-full bg-gray-100 dark:bg-[#1e293b] text-white flex justify-around items-center p-1">
+        <div className="lg:hidden  fixed bottom-0 left-0 w-full bg-gray-100 dark:bg-[#1e293b] text-white flex justify-around items-center p-1">
           <div className="flex flex-col items-center cursor-pointer">
             <Link
               to="/"

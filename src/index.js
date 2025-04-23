@@ -13,6 +13,7 @@ import MyDeveloperJouney from "./components/MyDeveloperJourney";
 import { ThemeProvider } from "./utils/ThemeContext";
 import Experience from "./components/Experience";
 import About_me from "./components/About_me";
+import { ChakraProvider } from "@chakra-ui/react";
 const AppLayout = () => {
   return (
     <div className="w-full h-screen flex flex-col bg-white dark:bg-gray-700">

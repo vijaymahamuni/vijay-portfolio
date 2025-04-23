@@ -17,6 +17,7 @@ import {
 import GCE_Clg from "../images/GCE_Clg.png";
 import Tigma_img from "../images/logo_tigma.png";
 import FootingPage from "./FootingPage";
+
 const Experience = () => {
   return (
     <main className="flex-grow bg-gray-100 dark:bg-[#0a192f]  text-black dark:text-white">
@@ -26,7 +27,7 @@ const Experience = () => {
           <VerticalTimeline>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(55,65,81)", color: "#fff" }}
+              contentStyle={{ background: "rgb(55,65,81)" }}
               contentArrowStyle={{
                 borderRight: "7px solid rgb(55,65,81)",
               }}
@@ -96,7 +97,7 @@ const Experience = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(55,65,81)", color: "#fff" }}
+              contentStyle={{ background: "rgb(55,65,81)" }}
               contentArrowStyle={{
                 borderRight: "7px solid rgb(55,65,81)",
               }}
@@ -140,7 +141,7 @@ const Experience = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(55,65,81)", color: "#fff" }}
+              contentStyle={{ background: "rgb(55,65,81)" }}
               contentArrowStyle={{
                 borderRight: "7px solid rgb(55,65,81)",
               }}
@@ -184,7 +185,7 @@ const Experience = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(55,65,81)", color: "#fff" }}
+              contentStyle={{ background: "rgb(55,65,81)" }}
               contentArrowStyle={{
                 borderRight: "7px solid rgb(55,65,81)",
               }}
@@ -232,7 +233,7 @@ const Experience = () => {
             </VerticalTimelineElement>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(55,65,81)", color: "#fff" }}
+              contentStyle={{ background: "rgb(55,65,81)" }}
               contentArrowStyle={{
                 borderRight: "7px solid rgb(55,65,81)",
               }}

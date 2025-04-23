@@ -6,7 +6,9 @@ const FootingPage = () => {
   return (
     <div className="flex justify-between">
       <div>
-        <h1 className="text-gray-400">© 2025 Made by Vijay Mahamuni.</h1>
+        <h1 className="text-gray-400 lg:text-[15px] ">
+          © 2025 Made by Vijay Mahamuni.
+        </h1>
       </div>
       <div className="flex md:justify-start">
         <h1 className="mr-5  hover:scale-125 cursor-pointer text-gray-500 dark:text-gray-400 hover:text-blue-400">
