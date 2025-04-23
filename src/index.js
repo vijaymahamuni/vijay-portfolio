@@ -8,12 +8,10 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Project from "./components/Project";
-import Blog from "./components/Blog";
 import MyDeveloperJouney from "./components/MyDeveloperJourney";
 import { ThemeProvider } from "./utils/ThemeContext";
 import Experience from "./components/Experience";
-import About_me from "./components/About_me";
-import { ChakraProvider } from "@chakra-ui/react";
+import AboutMe from "./components/About_me";
 const AppLayout = () => {
   return (
     <div className="w-full h-screen flex flex-col bg-white dark:bg-gray-700">
@@ -47,7 +45,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about-me",
-        element: <About_me />,
+        element: <AboutMe />,
       },
       {
         path: "/project",

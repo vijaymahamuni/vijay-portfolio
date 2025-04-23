@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
-import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import LocalFireDepartmentIcon from "@mui/icons-material/LocalFireDepartment";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -8,7 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { useContext } from "react";
 import { ThemeContext } from "../utils/ThemeContext";
-import { Laptop, Timeline, Work } from "@mui/icons-material";
+import { Laptop, Timeline } from "@mui/icons-material";
 
 const Header = () => {
   const location = useLocation();

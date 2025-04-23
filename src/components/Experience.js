@@ -6,14 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { FaGraduationCap, FaReact } from "react-icons/fa";
 import { List, ListItem, ListItemIcon, ListItemText, Box } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import {
-  Circle,
-  Dashboard,
-  Laptop,
-  PresentToAll,
-  Work,
-} from "@mui/icons-material";
+import { Circle, Dashboard, Laptop, Work } from "@mui/icons-material";
 import GCE_Clg from "../images/GCE_Clg.png";
 import Tigma_img from "../images/logo_tigma.png";
 import FootingPage from "./FootingPage";
@@ -227,7 +220,11 @@ const Experience = () => {
                   </Box>
                 </div>
                 <div>
-                  <img src={Tigma_img} className="mt-10  w-[300px] h-[70px]" />
+                  <img
+                    src={Tigma_img}
+                    className="mt-10  w-[300px] h-[70px]"
+                    alt="Tigma"
+                  />
                 </div>
               </div>
             </VerticalTimelineElement>
@@ -262,7 +259,11 @@ const Experience = () => {
                   </Box>
                 </div>
                 <div>
-                  <img src={GCE_Clg} className="mt-8 w-[400px] h-[100px]" />
+                  <img
+                    src={GCE_Clg}
+                    className="mt-8 w-[400px] h-[100px]"
+                    alt="GCE Img"
+                  />
                 </div>
               </div>
             </VerticalTimelineElement>

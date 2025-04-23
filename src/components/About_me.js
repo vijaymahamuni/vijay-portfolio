@@ -1,8 +1,6 @@
-import { useState } from "react";
-import { List, ListItem, ListItemIcon, ListItemText, Box } from "@mui/material";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { List, ListItem, ListItemText, Box } from "@mui/material";
 import FootingPage from "./FootingPage";
-const About_me = () => {
+const AboutMe = () => {
   // const [isHoveredreact, setIsHoveredreact] = useState(false);
   // const [isHoverJS, setIsHoverJS] = useState(false);
   // const [isHoverExpress, setIsHoverExpress] = useState(false);
@@ -113,4 +111,4 @@ Full-Stack Development Knowledge – Through personal projects, I have expanded 
   );
 };
 
-export default About_me;
+export default AboutMe;
